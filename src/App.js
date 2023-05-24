@@ -10,7 +10,7 @@ function App() {
   return (
     <StyletronProvider className={"provider"} value={engine}>
       <BaseProvider className={"provider"} theme={DarkTheme}>
-        <Page />
+        <Page className={'hi'}/>
       </BaseProvider>
     </StyletronProvider>
   );
