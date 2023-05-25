@@ -12,7 +12,7 @@ To run the app on development server, follow the instructions below :
     -  Next, change current working directory to project directoryusing the command ```cd path_the_cloned_project```
     -  Copy and paste ```sh runme.sh``` on the terminal and press enter.
 
-_Assuming Execution Policy has already been Set. If not please set execution policy._
+_Assuming Execution Policy has already been Set on your windows powershell. If not please set execution policy._
 -  Windows :
     -  Open Windows powershell and run the command ```git clone git@github.com:anmolsudhir/morff-assignment.git```
     -  Next, change current working directory to project directoryusing the command ```cd path_the_cloned_project```
