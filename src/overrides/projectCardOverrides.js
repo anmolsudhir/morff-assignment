@@ -5,6 +5,7 @@ export const projectCardOverrides = {
       width: "100%",
       flex: 1,
       height: "auto",
+      padding: "0rem",
       boxShadow: "0px 2px 0.6rem rgba(151, 151, 151, 0.25);",
       borderWidth: "0",
       margin: "0",

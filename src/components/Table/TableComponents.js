@@ -31,29 +31,30 @@ export const TableRow = styled("div", ({ color }) => ({
   boxSizing: "inherit",
 }));
 
-export const Header = styled("div", {
+export const Header = styled("div", ({ last = false }) => ({
   width: "100%",
+  padding: last ? "0rem" : "0rem 3rem 0 0",
   fontSize: "0.75rem",
   color: "#333333",
   whiteSpace: "nowrap",
   overflow: "hidden",
   textOverflow: "ellipsis",
-});
+}));
 
-export const TableData = styled("div", {
+export const TableData = styled("div", ({ last = false }) => ({
   width: "100%",
+  padding: last ? "0rem" : "0rem 3rem 0 0",
   fontSize: "1rem",
   color: "#333333",
-  padding: "0 1rem 0 0",
   boxSizing: "inherit",
   overflow: "hidden",
-});
+}));
 
-export const TallyData = styled("div", {
+export const TallyData = styled("div", ({ last = false }) => ({
   width: "100%",
   fontSize: "1rem",
+  padding: last ? "0.5rem 0 0 0" : "0.5rem 3rem 0 0",
   color: "#333333",
   lineHeight: "1rem",
-  padding: "0.5rem 0.5rem 0 0",
   boxSizing: "inherit",
-});
+}));

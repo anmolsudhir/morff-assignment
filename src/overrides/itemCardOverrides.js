@@ -8,6 +8,7 @@ export const itemCardOverrides = {
       margin: "0",
       boxSizing: "inherit",
       marginTop: "2%",
+      padding: "0rem",
       background:
         "linear-gradient(267.27deg, rgba(255, 193, 7, 0.78) 26.64%, rgba(255, 199, 0, 0.53) 100%)",
     },
