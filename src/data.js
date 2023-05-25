@@ -1,6 +1,7 @@
 import getTime from "./utils/getTime";
 import { Tag, KIND, VARIANT } from "baseui/tag";
 import { getTagOverrides } from "./overrides/tagOverrides";
+import { Link } from "./components/Components";
 
 const date = getTime();
 
@@ -36,18 +37,7 @@ export const paymentContent = {
     date,
     "INR 12,345",
     "Moodboard design, month 1 retainer costs",
-    <span
-      style={{
-        fontSize: "0.75rem",
-        textAlign: "right",
-        width: "100%",
-        textDecoration: "underline",
-        color: "#276EF1",
-        cursor: "pointer",
-      }}
-    >
-      MFDN-12345678
-    </span>,
+    <Link>MFDN-12345678</Link>,
   ],
 };
 
@@ -63,18 +53,7 @@ export const invoiceContent = {
   content: [
     [
       "Moodboard design, month 1 retainer costs",
-      <span
-        style={{
-          fontSize: "0.75rem",
-          textAlign: "right",
-          width: "100%",
-          textDecoration: "underline",
-          color: "#276EF1",
-          cursor: "pointer",
-        }}
-      >
-        MFDN-12345678
-      </span>,
+      <Link>MFDN-12345678</Link>,
       "12 April 2023",
       <Tag
         overrides={getTagOverrides("#666")}
@@ -89,18 +68,7 @@ export const invoiceContent = {
     ],
     [
       "Moodboard design, month 1 retainer costs",
-      <span
-        style={{
-          fontSize: "0.75rem",
-          textAlign: "right",
-          width: "100%",
-          textDecoration: "underline",
-          color: "#276EF1",
-          cursor: "pointer",
-        }}
-      >
-        MFDN-12345678
-      </span>,
+      <Link>MFDN-12345678</Link>,
       "12 April 2023",
       <Tag
         overrides={getTagOverrides()}
@@ -110,18 +78,7 @@ export const invoiceContent = {
       >
         Payment collected
       </Tag>,
-      <span
-        style={{
-          fontSize: "0.75rem",
-          textAlign: "right",
-          width: "100%",
-          textDecoration: "underline",
-          color: "#276EF1",
-          cursor: "pointer",
-        }}
-      >
-        MFDN-12345678
-      </span>,
+      <Link>MFDN-12345678</Link>,
       date,
     ],
   ],

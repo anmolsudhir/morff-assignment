@@ -9,28 +9,17 @@ import { LoadingComponent, Quote } from "../components/Components";
 import { narrowItemProps, mainItemProps } from "../overrides/props";
 import { cardOverrides } from "../overrides/topCardOverrides";
 import DashBoard from "../components/dashboard/DashBoard";
-import { styled } from "baseui";
+import { Content } from "../components/Components";
 
 const flexGridStyle = {
   flexGridColumnCount: 3,
   height: "100vh",
-  width: "100%",
+  width: "100vw",
   backgroundColor: "white",
   boxSizing: "inherit",
   margin: 0,
   padding: 0,
 };
-
-const Content = styled("div", {
-  marginTop: "1rem",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  height: "100%",
-  width: "100%",
-  boxSizing: "inherit",
-  flexDirection: "column",
-});
 
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,7 +39,7 @@ function Page() {
       ref.current.innerHTML = finalQuote; //final quote to be displayed
 
       // displaying quote for 5 seconds as loading screen
-      setTimeout(() => setIsLoading(false), 5000);
+      setTimeout(() => setIsLoading(false), 2000);
     } catch {
       console.error("error");
     }
@@ -86,7 +75,7 @@ function Page() {
           </StyledBody>
         </Card>
         {isLoading ? (
-          <Content>
+          <Content centered={true}>
             <LoadingComponent>
               <Quote ref={ref}></Quote>
             </LoadingComponent>

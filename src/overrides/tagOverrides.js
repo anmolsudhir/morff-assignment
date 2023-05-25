@@ -7,18 +7,21 @@ export const getTagOverrides = (bgColor) => ({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            height: "auto",
           }
         : {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            height: "auto",
           },
   },
   Text: {
     style: ({ $theme }) => ({
-      fontSize: "0.9rem",
-      whitespace: "nowrap" /* Prevent line wrapping */,
-      overflow: "hidden" /* Hide the overflowing text */,
+      margin: "0",
+      fontSize: "0.8rem",
+      whitespace: "nowrap",
+      overflow: "hidden",
       textOverflow: "ellipsis",
     }),
   },

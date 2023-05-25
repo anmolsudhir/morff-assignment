@@ -1,24 +1,13 @@
 import React, { useState } from "react";
-import { styled } from "styletron-react";
 import { Tabs, Tab } from "baseui/tabs-motion";
 import { tabsOverrides, tabOverrides } from "../../overrides/tabOverrides";
 import { ThemeProvider, LightTheme } from "baseui";
 import Status from "../Status";
 import Payment from "../Payment";
-
-const Content = styled("div", {
-  marginTop: "1rem",
-  display: "flex",
-  alignItems: "flex-start",
-  justifyContent: "flex-start",
-  height: "100%",
-  width: "100%",
-  boxSizing: "inherit",
-  flexDirection: "column",
-});
+import { Content } from "../Components";
 
 function DashBoard() {
-  const [activeKey, setActiveKey] = useState(0);
+  const [activeKey, setActiveKey] = useState("0");
 
   return (
     <Content>
@@ -38,7 +27,7 @@ function DashBoard() {
           <Tab overrides={tabOverrides} title="Overview"></Tab>
         </Tabs>
       </ThemeProvider>
-      {activeKey != "0" ? <Payment></Payment> : <Status></Status>}
+      {activeKey !== "0" ? <Payment></Payment> : <Status></Status>}
     </Content>
   );
 }

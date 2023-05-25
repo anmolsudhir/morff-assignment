@@ -30,3 +30,45 @@ export const Quote = styled("div", {
   textOverflow: "ellipsis",
   overflow: "auto",
 });
+
+export const Link = styled("a", ({ fontSize = "1rem" }) => ({
+  fontSize: `${fontSize}`,
+  textDecoration: "underline",
+  color: "#276EF1",
+  cursor: "pointer",
+}));
+
+export const SectionHeader = styled("span", {
+  fontSize: "1.5rem",
+  fontWeight: "600",
+});
+
+export const CardWrapper = styled("div", {
+  width: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  boxSizing: "border-box",
+  gap: "0.75rem",
+});
+
+export const HeaderWrapper = styled("div", ({ styles }) => ({
+  ...styles,
+  marginLeft: "2%",
+  width: "100%",
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  gap: "1%",
+}));
+
+export const Content = styled("div", ({ centered = false }) => ({
+  marginTop: "1rem",
+  display: "flex",
+  alignItems: centered ? "center" : "flex-start",
+  justifyContent: centered ? "center" : "flex-start",
+  height: "100%",
+  width: "100%",
+  boxSizing: "inherit",
+  flexDirection: "column",
+}));
